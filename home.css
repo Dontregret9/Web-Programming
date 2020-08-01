@@ -1,0 +1,63 @@
+body
+{
+    background-color:orange;
+    margin: 0px;
+}
+a:hover
+{
+    text-decoration: powderblue;
+}
+a:link
+{
+    text-decoration: none;
+}
+.header
+{
+    height: 200px;
+    background-color: rgb(38, 58, 235);
+    border-radius: 100px 0px 0px 100px;
+}
+.edu_name
+{
+    font-weight: bold;
+    position: relative;
+}
+.title 
+{
+    font-size: 35px;
+    font-weight: bold;
+}
+.note
+{
+    font-weight: normal;
+    font-size: 20px;
+    position: relative;
+    left: 100px;
+}
+#name
+{
+    font-size: 100px;
+    font-family: cursive;
+    position: absolute;
+    top: 50px;
+    left: 300px;
+}
+#avatar
+{
+    width: 200px;
+    height: 200px;
+    position: relative;
+}
+#coconut
+{
+    position: absolute;
+    top: 0px;
+    left: 1450px;
+}
+
+#flag
+{
+    position: absolute;;
+    right: 0px;
+    top: 0px;
+}
