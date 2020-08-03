@@ -17,29 +17,18 @@ a:link
     background-color: rgb(38, 58, 235);
     border-radius: 100px 0px 0px 100px;
 }
-.edu_name
-{
-    font-weight: bold;
-    position: relative;
-}
 .title 
 {
     font-size: 35px;
     font-weight: bold;
 }
-.note
-{
-    font-weight: normal;
-    font-size: 20px;
-    position: relative;
-    left: 100px;
-}
+
 #name
 {
     font-size: 100px;
     font-family: cursive;
     position: absolute;
-    top: 50px;
+    top: 0px;
     left: 300px;
 }
 #avatar
