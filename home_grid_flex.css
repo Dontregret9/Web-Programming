@@ -2,11 +2,13 @@
 .container
 {
     display: grid;
-    grid-template-columns: 1fr 5fr 1fr;
+    grid-template-columns: 1fr 5fr 2fr;
     grid-template-rows: 200px 1fr;
     height: 1000px;
 }
-
+/*
+------------------------------------------------------------------------------------------
+*/
 .header
 {
     grid-column: 1/4;
@@ -46,20 +48,11 @@ li
 {
     flex-grow: 1;
 }
-.country
-{
-
-}
-
-
 .left
 {
     height: 100%;
 }
-.right
-{
-    height: 100%;
-}
+
 .content
 {
     height: 100%;
@@ -103,10 +96,6 @@ li
     font-weight: bold;
     font-size: 25px;    
 }
-
-
-
-
 .skill
 {
     display: grid;
@@ -126,9 +115,6 @@ li
     grid-row: 2/5;
     background-color: lightblue;
 }
-
-
-
 
 .personal
 {
@@ -170,8 +156,6 @@ li
     grid-row:2/3;
 }
 
-
-
 #contact
 {
     display: grid;
@@ -190,4 +174,28 @@ li
 #con_tab
 {
     grid-row:2/3
+}
+/*
+------------------------------------------------------------------------------------------------------------------------------
+*/
+.right
+{
+    
+    
+}
+#pictures
+{
+    display: flex;
+    flex-direction: column;
+
+    width: 360px;
+    margin-top: 10px;
+    margin-left: 10px;
+    
+}
+.picture
+{
+    border: solid 3px blue;
+    width: fit-content;
+    background-color: blue;
 }
