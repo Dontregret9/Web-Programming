@@ -2,7 +2,7 @@
 .container
 {
     display: grid;
-    grid-template-columns: 1fr 5fr 2fr;
+    grid-template-columns: 2fr 5fr 2fr;
     grid-template-rows: 200px 1fr;
     height: 1000px;
 }
@@ -20,8 +20,13 @@
 hr
 {
     border: 1px solid blue;
-    width: 800px;
+    width: 750px;
     margin-top: 0px;
+    size: 5px;
+}
+a:link
+{
+    color: rgb(34, 92, 218);
 }
 li
 {
@@ -50,7 +55,14 @@ li
 }
 .left
 {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
     height: 100%;
+
 }
 
 .content
@@ -96,7 +108,7 @@ li
     font-weight: bold;
     font-size: 25px;    
 }
-.skill
+#skill
 {
     display: grid;
     align-items: center;
@@ -116,7 +128,7 @@ li
     background-color: lightblue;
 }
 
-.personal
+#personal
 {
     display: grid;
     grid-template-rows: auto auto;
