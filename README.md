@@ -1,2 +1,2 @@
 # Web-Programming
-Web programming from scratch
+My first project. This is my resume in HTML/CSS + JAVASCRIPT
