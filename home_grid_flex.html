@@ -1,30 +1,34 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Welcome to my site</title>
         <link rel="stylesheet" href="./home_grid_flex.css" type="text/css">
+        <script src="./home.js"></script>
     </head>
 
-    <body style="margin: 0px;height: 100%;background-color: rgb(214, 250, 11);">
+    <body style="margin: 0px;height: 100%;background-color: rgb(214, 250, 11);"
+        onload="ShowSlides([1,2,3])">
         <div class="container">
             <div class="header">
-                <div style="height: 200px;" class="header_container">
+                <div style="height: 12vw;" class="header_container">
 
                     <div class="avatar">
-                        <img style="width:200px; height:200px;" src="./avatar.png" />
+                        <img style="width:12vw; height:12vw;" src="./avatar.png" />
                     </div>
-                    <div class="name" style="font-size:100px; font-family:cursive;"> Le Duc Hoa</div>
+                    <div class="name" style="font-size:7vw; font-family:cursive;"> Le Duc Hoa</div>
                     <div class="hometown">
-                        <img style="height: 200px;" src="./coconuttree.png"/>
+                        <img style="height: 12vw;" src="./coconuttree.png"/>
                     </div>
                     <div class="country">
-                        <img src="./f.png">
+                        <img style="height: 5vw; width: 7vw;" src="./f.png">
                     </div>
 
                 </div>
             </div>
+
             <div class="left">
-                <div>
+                <div style="font-size: 2vw;">
                     Table of contents
                     <ol type="a">
                         <li><a href="#edu">Education</a> </li>
@@ -35,6 +39,7 @@
                     </ol>
                 </div>
             </div>
+
             <div class="content">
                 <div id="edu">
                     <div class="title">
@@ -44,7 +49,7 @@
                     <div id="edu_tab"></div>
                     <div id="uni_img">
                         <a href="https://www.hcmus.edu.vn/" target="_blank" >
-                            <img src="./hcmus.png" height="60px" width="60px"/>
+                            <img src="./hcmus.png" style="height:3.6vw; width:3.6vw"/>
                         </a> 
                     </div>
 
@@ -55,7 +60,7 @@
 
                     <div id="course_img">
                         <a href="https://www.coderschool.vn" target="_blank" >
-                            <img src="./coderschool.png" height="60px" width="60px"/>
+                            <img src="./coderschool.png" style="height:3.6vw; width:3.6vw"/>
                         </a>
                     </div>
 
@@ -82,7 +87,7 @@
                         </ul>
                     </div>
                     <div id="ml">
-                        <b style="font-size: 25px;">Machine Learning</b>
+                        <b style="font-size: 1.5vw;">Machine Learning</b>
                         <ul>
                             <li>Understanding the principles of Machine Learning</li>
                             <li>Knowledge in Data Processing</li>
@@ -90,7 +95,7 @@
                         </ul>
                     </div>
                    <div id="web">
-                       <b style="font-size: 25px;">Web Programming</b>
+                       <b style="font-size: 1.5vw;">Web Programming</b>
                         <ul>
                             <li>HTML/CSS</li>
                             <li>Javascript</li>
@@ -140,22 +145,38 @@
                     </div>
                 </div>
             </div>
+
             <div class="right">
-                <div style="font-weight:bold; font-size: 30px; margin-top: 20px;">
+                <div id="highlight_picture">
                     Highlight pictures
-                   
+                </div>  
+
+                <div id="up-down">
+                    <img id="up-btn" src="./up.png" onclick="ShowSlides([1,2,3])">
+                    <img id="down-btn" src="./down.png" onclick="ShowSlides([4,5,6])">
                 </div>
+
                 <div id="pictures">
                     <div class="picture">
-                        <img src="./shoppe.png" style="width: 350px; height: 250px;"/>
+                        <img src="./shoppe.png" style="width: 21vw; height: 15vw;"/>
                     </div>
                     <div class="picture">
-                        <img src="./github.png" style="width: 350px; height: 250px;"/>
+                        <img src="./github.png" style="width: 21vw; height: 15vw;"/>
                     </div>
                     <div class="picture">
-                        <img src="./resume.png" style="width: 350px; height: 250px;"/>
+                        <img src="./resume.png" style="width: 21vw; height: 15vw;"/>
+                    </div>
+                    <div class="picture">
+                        <img src="./qs.JPG" style="width: 21vw; height: 15vw;"/>
+                    </div>
+                    <div class="picture">
+                        <img src="./13.jpg" style="width: 21vw; height: 15vw;"/>
+                    </div>
+                    <div class="picture">
+                        <img src="./81.jpg" style="width: 21vw; height: 15vw;"/>
                     </div>
                 </div>
+
             </div>
         </div>
     </body>
