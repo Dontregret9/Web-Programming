@@ -19,22 +19,7 @@
     border-radius: 6vw 0 0 6vw;
     padding-bottom: 1.2vw;
 }
-hr
-{
-    border: 1px solid blue;
-    width: 48vw;
-    margin-top: 0;
-    size: 0.3vw;
 
-}
-a:link
-{
-    color: rgb(34, 92, 218);
-}
-li
-{
-    margin: 0 0 0.9vw 0;
-}
 ul li
 {
     font-size: 1.3vw;
