@@ -1,10 +1,12 @@
 
 .container
 {
+    position: absolute;
+    z-index: 0;
     display: grid;
     grid-template-columns: 2fr 5fr 2fr;
     grid-template-rows: 12vw 1fr;
-    height: 60vw;
+    height: 100%;
 }
 /*
 ------------------------------------------------------------------------------------------
@@ -224,6 +226,9 @@ ol li a
 
     opacity: 0.2;
     transition: all ease 0.5s;
+
+    position: relative;
+    z-index: 0;
 }
 #down-btn:hover
 {
@@ -237,6 +242,9 @@ ol li a
     cursor: pointer;
     opacity: 0.2;    
     transition: all ease 0.5s;
+
+    position: relative;
+    z-index: 0;
 }
 #up-btn:hover
 {
@@ -255,7 +263,7 @@ ol li a
 {
     display: flex;
     flex-direction: column;
-
+    
     width: 6.6vw;
     margin-top: 0.6vw;
     margin-left: 0.6vw;
@@ -267,5 +275,78 @@ ol li a
     border: solid 0.18vw blue;
     width: fit-content;
     background-color: blue;
+    cursor: pointer;
     display: none;
+}
+
+#pic0_modal,#pic1_modal,#pic2_modal,#pic3_modal,#pic4_modal,#pic5_modal
+{   
+    display: none;
+}
+.modal
+{
+    position: fixed;    
+    z-index: 2;
+
+    padding-left: 15%;
+    padding-top: 5%;
+    
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(32, 28, 28,0.9);
+}
+.modal_content
+{
+    display: flex;
+    flex-direction: row;
+
+    max-width: 1250px;
+    max-height: 1250px;
+
+    background-color:steelblue;
+}   
+.img_view
+{
+    max-width: 1000px;
+    max-height: 1200px;
+
+    margin: 5px;
+}
+.img_close
+{
+    float: right;
+
+    position: fixed;
+    top: 1vw;
+    right: 2vw;
+
+    cursor: pointer;
+    color: whitesmoke;
+    font-size: 50px;
+    font-weight: bold;
+}
+.img_note
+{
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(234, 246, 237);
+}
+.img_prev, .img_next
+{
+    position: fixed;
+    top: 50%;
+
+    font-size: 30px;
+    color: whitesmoke;
+
+    cursor: pointer;
+}
+.img_prev
+{
+    left: 10%;
+}
+.img_next
+{
+    right: 12%;
 }

@@ -1,29 +1,85 @@
-// img_index is an array, it contains index of pitures to show. 
-// example: [1,2,3]
-function ShowSlides(img_index) 
+// slideshow-----------------------------------------------------------------------
+
+var cur_img = [0,1,2];
+
+function ShowSlides(start_img) 
 {
     // get all picture elements and hide them 
-    var slides = document.getElementsByClassName("picture");
+    let slides = document.getElementsByClassName("picture");
     for (let i = 0; i < slides.length; i++)
     {
         slides[i].style.display = "none";
     }
 
-    //browse in img_index and show those pictures 
-    for(let i = 0; i < img_index.length; i++)
+    for(let i = 0; i < 3; i++)
     {
-        // index in [0,length-1]
-        img_index[i] = img_index[i] % (slides.length);
+        var start = cur_img[i];
 
-        slides[img_index[i]].style.display = "block";
+        if(start < 0)
+        {
+            start = slides.length + start;
+            cur_img[i] = start;
+        }
+
+        if(start > slides.length-1)
+        {
+            start = start - slides.length;
+            cur_img[i] = start;
+        }
+        console.log("start: " + start)
+        slides[start].style.display = "block";
     }
+}   
 
-    // for each index: index = index +1 to suffer to the next picture. 
-    for(let i = 0; i < img_index.length; i++)
+function SlideTo(step)
+{
+    for(let i=0;i<3;i++)
     {
-        img_index[i] = (img_index[i] + 1) % (slides.length);
+        cur_img[i] += 1;
     }
-    
-    // slideshow auto suffer each 2s
-    setTimeout(ShowSlides(img_index),2000);
+    console.log("slideto: " + cur_img)
+    ShowSlides(cur_img);
+}
+
+// image view----------------------------------------------------------
+
+var img_viewing = "";
+
+function ImageView(id)
+{
+    document.getElementById(id).style.display = "block";
+    img_viewing = id;
+}
+
+function ExitImageView(id)
+{
+    document.getElementById(id).style.display = "none";
+    img_viewing = "";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event)
+{
+    let modal = document.getElementsByClassName("modal");
+    for(let i =0;i<modal.length;i++)
+    {
+        if (event.target == modal[i])
+        {
+            modal[i].style.display = "none";
+            break;
+        }
+    }
+}
+function ImageViewNext(n)
+{    
+    let slides = document.getElementsByClassName("picture");
+
+    let index = parseInt(img_viewing[3]);
+    index+=n;
+    if(index >= 0 || index < slides.length)
+    {
+        let next_id = "pic"+index+"_modal";
+        ExitImageView(img_viewing);
+        ImageView(next_id);
+    }
 }

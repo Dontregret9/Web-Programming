@@ -7,8 +7,8 @@
         <script src="./home.js"></script>
     </head>
 
-    <body style="margin: 0px;height: 100%;background-color: rgb(214, 250, 11);"
-        onload="ShowSlides([1,2,3])">
+    <body style="margin: 0px;height: 100%;background-color: white;"
+        onload="ShowSlides(0)">
         <div class="container">
             <div class="header">
                 <div style="height: 12vw;" class="header_container">
@@ -23,7 +23,6 @@
                     <div class="country">
                         <img style="height: 5vw; width: 7vw;" src="./f.png">
                     </div>
-
                 </div>
             </div>
 
@@ -38,6 +37,7 @@
                         <li><a href="#contact">Contact</a></li>
                     </ol>
                 </div>
+                
             </div>
 
             <div class="content">
@@ -152,32 +152,126 @@
                 </div>  
 
                 <div id="up-down">
-                    <img id="up-btn" src="./up.png" onclick="ShowSlides([1,2,3])">
-                    <img id="down-btn" src="./down.png" onclick="ShowSlides([4,5,6])">
+                    <img id="up-btn" src="./up.png" onclick="SlideTo(1)">
+                    <img id="down-btn" src="./down.png" onclick="SlideTo(-1)">
                 </div>
 
                 <div id="pictures">
                     <div class="picture">
-                        <img src="./shoppe.png" style="width: 21vw; height: 15vw;"/>
+                        <a onclick="ImageView('pic0_modal')"><img id="pic0" src="./shoppe.png" style="width: 21vw; height: 15vw;"/></a>
                     </div>
                     <div class="picture">
-                        <img src="./github.png" style="width: 21vw; height: 15vw;"/>
+                        <a onclick="ImageView('pic1_modal')"><img id="pic1" src="./coderschool.jpg" style="width: 21vw; height: 15vw;"/></a> 
                     </div>
                     <div class="picture">
-                        <img src="./resume.png" style="width: 21vw; height: 15vw;"/>
+                        <a onclick="ImageView('pic2_modal')"><img id="pic2" src="./resume.png" style="width: 21vw; height: 15vw;"/></a> 
                     </div>
                     <div class="picture">
-                        <img src="./qs.JPG" style="width: 21vw; height: 15vw;"/>
+                        <a onclick="ImageView('pic3_modal')"><img id="pic3" src="./qs.JPG" style="width: 21vw; height: 15vw;"/></a>
                     </div>
                     <div class="picture">
-                        <img src="./13.jpg" style="width: 21vw; height: 15vw;"/>
+                        <a onclick="ImageView('pic4_modal')"><img id="pic4" src="./13.jpg" style="width: 21vw; height: 15vw;"/></a>
                     </div>
                     <div class="picture">
-                        <img src="./81.jpg" style="width: 21vw; height: 15vw;"/>
+                        <a onclick="ImageView('pic5_modal')"><img id="pic5" src="./81.jpg" style="width: 21vw; height: 15vw;"/></a>
                     </div>
                 </div>
 
             </div>
         </div>
+
+        <div class="hidden-content">
+            <div id="pic0_modal" class="modal">
+                <span class="img_close" onclick="ExitImageView('pic0_modal')">&times;</span>
+                <a class="img_prev" onclick="ImageViewNext(-1)">&#10094;</a>
+                <div class="modal_content">
+                    <img class="img_view" src="./shoppe.png" alt="Shopee Code leadge">
+                    <p class="img_note"> My Shopee certificate</p>
+                </div>
+                <a class="img_next" onclick="ImageViewNext(1)">&#10095;</a>
+            </div>
+
+            <div id="pic1_modal" class="modal">
+                <span class="img_close" onclick="ExitImageView('pic1_modal')">&times;</span>
+                <a class="img_prev" onclick="ImageViewNext(-1)">&#10094;</a>
+                <div class="modal_content">
+                    <img class="img_view" src="./coderschool.jpg" alt="Developer circles Vietnam innovation challenge">
+                    <p class="img_note">Developer circles Vietnam innovation challenge</p>
+                </div>
+                <a class="img_next" onclick="ImageViewNext(1)">&#10095;</a>
+            </div>
+
+            <div id="pic2_modal" class="modal">
+                <span class="img_close" onclick="ExitImageView('pic2_modal')">&times;</span>
+                <a class="img_prev" onclick="ImageViewNext(-1)">&#10094;</a>
+                <div class="modal_content">
+                    <img class="img_view" src="./resume.png" alt="Shopee Code leadge">
+                    <p class="img_note"> My Shopee certificate</p>
+                </div>
+                <a class="img_next" onclick="ImageViewNext(1)">&#10095;</a>
+            </div>
+
+            <div id="pic3_modal" class="modal">
+                <span class="img_close" onclick="ExitImageView('pic3_modal')">&times;</span>
+                <a class="img_prev" onclick="ImageViewNext(-1)">&#10094;</a>
+                <div class="modal_content">
+                    <img class="img_view" src="./qs.JPG" alt="me!">
+                    <p class="img_note"> me!</p>
+                </div>
+                <a class="img_next" onclick="ImageViewNext(1)">&#10095;</a>
+            </div>
+
+            <div id="pic4_modal" class="modal">
+                <span class="img_close" onclick="ExitImageView('pic4_modal')">&times;</span>
+                <a class="img_prev" onclick="ImageViewNext(-1)">&#10094;</a>
+                <div class="modal_content">
+                    <img class="img_view" src="./13.jpg" alt="I love black horse">
+                    <p class="img_note"> I love black horse</p>
+                </div>
+                <a class="img_next" onclick="ImageViewNext(1)">&#10095;</a>
+            </div>
+
+            <div id="pic5_modal" class="modal">
+                <span class="img_close" onclick="ExitImageView('pic5_modal')">&times;</span>
+                <a class="img_prev" onclick="ImageViewNext(-1)">&#10094;</a>
+                <div class="modal_content">
+                    <img class="img_view" src="./81.jpg" alt="I love this car">
+                    <p class="img_note"> I love this car</p>
+                </div>
+                <a class="img_next" onclick="ImageViewNext(1)">&#10095;</a>
+            </div>
+           <!--
+                <div class="modal_content">
+                <div id="pic1_view" class="img_view">
+                    <img src="./coderschool.jpg" alt="">
+                </div>
+            </div>
+
+            <div class="modal_content">
+                <div id="pic2_view" class="img_view">
+                    <img src="./resume.png" alt="">
+                </div>
+            </div>
+
+            <div class="modal_content">
+                <div id="pic3_view" class="img_view">
+                    <img src="./qs.JPG" alt="">
+                </div>
+            </div>
+
+            <div class="modal_content">
+                <div id="pic4_view" class="img_view">
+                    <img src="./13.jpg" alt="">
+                </div>
+            </div>
+    
+            <div class="modal_content">
+                <div id="pic5_view" class="img_view">
+                    <img src="./81.jpg" alt="">
+                </div>
+            </div>
+           -->
+        </div>
+        
     </body>
 </html>
