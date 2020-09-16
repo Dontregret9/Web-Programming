@@ -47,7 +47,7 @@ var img_viewing = "";
 
 function ImageView(id)
 {
-    document.getElementById(id).style.display = "block";
+    document.getElementById(id).style.display = "flex";
     img_viewing = id;
 }
 
@@ -59,7 +59,7 @@ function ExitImageView(id)
 
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event)
-{
+{       
     let modal = document.getElementsByClassName("modal");
     for(let i =0;i<modal.length;i++)
     {

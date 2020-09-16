@@ -1,4 +1,21 @@
-
+hr
+{
+    border: 1px solid blue;
+    width: 48vw;
+    margin-top: 0;
+    size: 0.3vw;
+}
+a:link
+{
+    color: rgb(34, 92, 218);
+}
+li
+{
+    margin: 0 0 0.9vw 0;
+}
+/*
+-----------------------------------------------------------------------------------------
+*/
 .container
 {
     position: absolute;
@@ -14,7 +31,6 @@
 .header
 {
     grid-column: 1/4;
-    width: 100%;
     background-color: rgb(18, 32, 134);
     border-radius: 6vw 0 0 6vw;
     padding-bottom: 1.2vw;
@@ -194,7 +210,7 @@ ol li a
 {
     display: grid;
     grid-template-rows: 3.3vw 47.7vw;
-    grid-template-columns: 2.4vw auto;
+    grid-template-columns: 2.4vw 22vw;
 }
 #up-down
 {
@@ -273,28 +289,44 @@ ol li a
     position: fixed;    
     z-index: 2;
 
-    padding-left: 15%;
-    padding-top: 5%;
-    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
     width: 100%;
     height: 100%;
 
-    background-color: rgba(32, 28, 28,0.9);
+    background-color: rgba(32, 28, 28, 0.9); 
 }
 .modal_content
+{   
+    display: flex;
+    flex-direction: row;    
+    align-items: center;
+
+    max-width: 1350px;
+    max-height: 950px;
+    background-color: lawngreen;
+}
+
+.view_content
 {
     display: flex;
-    flex-direction: row;
+    flex-direction: row;    
 
     max-width: 1250px;
     max-height: 1250px;
 
     background-color:steelblue;
 }   
+
 .img_view
 {
-    max-width: 1000px;
-    max-height: 1200px;
+    max-width: 60vw;
+    max-height: 72vw;
+
+    min-width: 192px;
+    min-height: 108px;
 
     margin: 5px;
 }
@@ -316,22 +348,22 @@ ol li a
     font-size: 30px;
     font-weight: bold;
     color: rgb(234, 246, 237);
+    max-width: 10vw;
 }
 .img_prev, .img_next
 {
-    position: fixed;
-    top: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
-    font-size: 30px;
+    font-size: 40px;
+    height: 60px;
+    width: 70px;
     color: whitesmoke;
 
     cursor: pointer;
 }
-.img_prev
+.img_next:hover, .img_prev:hover
 {
-    left: 10%;
-}
-.img_next
-{
-    right: 12%;
+    background-color: rgb(117, 106, 98);
 }
