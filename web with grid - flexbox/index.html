@@ -7,7 +7,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Welcome to my site</title>
-        <link rel="stylesheet" href="./home_grid_flex.css" type="text/css">
+        <link rel="stylesheet" href="./home.css" type="text/css">
         <script src="./home.js"></script>
     </head>
 
@@ -17,15 +17,15 @@
             <div class="header">
                 <div class="header_container">
                     <div class="avatar">
-                        <img id="avatar_img" style="width:12vw; height:12vw;" src="./avatar.png" />
+                        <img id="avatar_img" style="width:12vw; height:12vw;" src="../images/avatar.png" />
                     </div>
                     <div class="name" style="font-size:7vw;font-family: 'Great Vibes', cursive;"> Le Duc Hoa</div>
                     <div class="hometown">
-                        <img id="hometown_img" style="height: 12vw;" src="./coconuttree.png"/>
+                        <img id="hometown_img" style="height: 12vw;" src="../images/coconuttree.png"/>
                     </div>
                     <div class="country">
-                        <img id="country_img" src="./flag.png">
-                        <img id="flag_fly_img" src="./flag_fly.gif">
+                        <img id="country_img" src="../images/flag.png">
+                        <img id="flag_fly_img" src="../images/flag_fly.gif">
                     </div>
                 </div>
             </div>
@@ -53,7 +53,7 @@
                     <div id="edu_tab"></div>
                     <div id="uni_img">
                         <a href="https://www.hcmus.edu.vn/" target="_blank" >
-                            <img src="./hcmus.png" style="height:3.6vw; width:3.6vw"/>
+                            <img src="../images//hcmus.png" style="height:3.6vw; width:3.6vw"/>
                         </a> 
                     </div>
 
@@ -64,7 +64,7 @@
 
                     <div id="course_img">
                         <a href="https://www.coderschool.vn" target="_blank" >
-                            <img src="./coderschool.png" style="height:3.6vw; width:3.6vw"/>
+                            <img src="../images/coderschool.png" style="height:3.6vw; width:3.6vw"/>
                         </a>
                     </div>
 
@@ -160,28 +160,28 @@
                 </div>  
 
                 <div id="up-down">
-                    <img id="up-btn" src="./up.png" onclick="SlideTo(1)">
-                    <img id="down-btn" src="./down.png" onclick="SlideTo(-1)">
+                    <img id="up-btn" src="../images/up.png" onclick="SlideTo(1)">
+                    <img id="down-btn" src="../images/down.png" onclick="SlideTo(-1)">
                 </div>
 
                 <div id="pictures">
                     <div class="picture">
-                        <a onclick="ImageView('pic0_modal')"><img id="pic0" src="./shoppe.png" style="width: 21vw; height: 15vw;"/></a>
+                        <a onclick="ImageView('pic0_modal')"><img id="pic0" src="../images/shoppe.png" style="width: 21vw; height: 15vw;"/></a>
                     </div>
                     <div class="picture">
-                        <a onclick="ImageView('pic1_modal')"><img id="pic1" src="./coderschool.jpg" style="width: 21vw; height: 15vw;"/></a> 
+                        <a onclick="ImageView('pic1_modal')"><img id="pic1" src="../images/coderschool.jpg" style="width: 21vw; height: 15vw;"/></a> 
                     </div>
                     <div class="picture">
-                        <a onclick="ImageView('pic2_modal')"><img id="pic2" src="./caro.png" style="width: 21vw; height: 15vw;"/></a> 
+                        <a onclick="ImageView('pic2_modal')"><img id="pic2" src="../images/caro.png" style="width: 21vw; height: 15vw;"/></a> 
                     </div>
                     <div class="picture">
-                        <a onclick="ImageView('pic3_modal')"><img id="pic3" src="./qs.JPG" style="width: 21vw; height: 15vw;"/></a>
+                        <a onclick="ImageView('pic3_modal')"><img id="pic3" src="../images/qs.JPG" style="width: 21vw; height: 15vw;"/></a>
                     </div>
                     <div class="picture">
-                        <a onclick="ImageView('pic4_modal')"><img id="pic4" src="./horse.jpg" style="width: 21vw; height: 15vw;"/></a>
+                        <a onclick="ImageView('pic4_modal')"><img id="pic4" src="../images/horse.jpg" style="width: 21vw; height: 15vw;"/></a>
                     </div>
                     <div class="picture">
-                        <a onclick="ImageView('pic5_modal')"><img id="pic5" src="./car.jpg" style="width: 21vw; height: 15vw;"/></a>
+                        <a onclick="ImageView('pic5_modal')"><img id="pic5" src="../images/car.jpg" style="width: 21vw; height: 15vw;"/></a>
                     </div>
                 </div>
 
@@ -194,7 +194,7 @@
                 <div class="modal_content">
                     <a class="img_prev" onclick="ImageViewNext(-1)">&#10094;</a>
                     <div class="view_content">
-                        <img class="img_view" src="./shoppe.png" alt="Shopee Code leadge">
+                        <img class="img_view" src="../images/shoppe.png" alt="Shopee Code leadge">
                         <p class="img_note"> My Shopee certificate</p>
                     </div>
                     <a class="img_next" onclick="ImageViewNext(1)">&#10095;</a>
@@ -207,7 +207,7 @@
                 <div class="modal_content">
                     <a class="img_prev" onclick="ImageViewNext(-1)">&#10094;</a>
                     <div class="view_content">
-                        <img class="img_view" src="./coderschool.jpg" alt="Facebook Developer Circle + CoderSchool">
+                        <img class="img_view" src="../images/coderschool.jpg" alt="Facebook Developer Circle + CoderSchool">
                         <p class="img_note"> Facebook Developer Circle + CoderSchool</p>
                     </div>
                     <a class="img_next" onclick="ImageViewNext(1)">&#10095;</a>
@@ -219,7 +219,7 @@
                 <div class="modal_content">
                     <a class="img_prev" onclick="ImageViewNext(-1)">&#10094;</a>
                     <div class="view_content">
-                        <img class="img_view" src="./caro.png" alt="My caro game in console (OOP in C++)">
+                        <img class="img_view" src="../images/caro.png" alt="My caro game in console (OOP in C++)">
                         <p class="img_note"> My caro game in console (OOP in C++)</p>
                     </div>
                     <a class="img_next" onclick="ImageViewNext(1)">&#10095;</a>
@@ -231,7 +231,7 @@
                 <div class="modal_content">
                     <a class="img_prev" onclick="ImageViewNext(-1)">&#10094;</a>
                     <div class="view_content">
-                        <img class="img_view" src="./qs.JPG" alt="My great time in University">
+                        <img class="img_view" src="../images/qs.JPG" alt="My great time in University">
                         <p class="img_note"> My great time in University</p>
                     </div>
                     <a class="img_next" onclick="ImageViewNext(1)">&#10095;</a>
@@ -243,7 +243,7 @@
                 <div class="modal_content">
                     <a class="img_prev" onclick="ImageViewNext(-1)">&#10094;</a>
                     <div class="view_content">
-                        <img class="img_view" src="./horse.jpg" alt="I love horse, especially black horse">
+                        <img class="img_view" src="../images/horse.jpg" alt="I love horse, especially black horse">
                         <p class="img_note"> I love horse, especially black horse</p>
                     </div>
                     <a class="img_next" onclick="ImageViewNext(1)">&#10095;</a>
@@ -255,43 +255,12 @@
                 <div class="modal_content">
                     <a class="img_prev" onclick="ImageViewNext(-1)">&#10094;</a>
                     <div class="view_content">
-                        <img class="img_view" src="./car.jpg" alt="Tesla model 3 is electric car">
+                        <img class="img_view" src="../images/car.jpg" alt="Tesla model 3 is electric car">
                         <p class="img_note"> Tesla model 3 is electric car. I love it</p>
                     </div>
                     <a class="img_next" onclick="ImageViewNext(1)">&#10095;</a>
                 </div>
             </div>
-           <!--
-                <div class="modal_content">
-                <div id="pic1_view" class="img_view">
-                    <img src="./coderschool.jpg" alt="">
-                </div>
-            </div>
-
-            <div class="modal_content">
-                <div id="pic2_view" class="img_view">
-                    <img src="./resume.png" alt="">
-                </div>
-            </div>
-
-            <div class="modal_content">
-                <div id="pic3_view" class="img_view">
-                    <img src="./qs.JPG" alt="">
-                </div>
-            </div>
-
-            <div class="modal_content">
-                <div id="pic4_view" class="img_view">
-                    <img src="./13.jpg" alt="">
-                </div>
-            </div>
-    
-            <div class="modal_content">
-                <div id="pic5_view" class="img_view">
-                    <img src="./81.jpg" alt="">
-                </div>
-            </div>
-           -->
         </div>
         
     </body>
