@@ -48,7 +48,8 @@ ol li a
 .header_container
 {
     display: flex;
-    height: 12vw;
+    height: 22.5vh;
+    transition: 1s;
 }
 
 .avatar
@@ -61,15 +62,16 @@ ol li a
     flex-grow: 6;
     display: flex;
     align-items: center;
+    transition: 1s;
 }
 #country_img
 {
-    height: 5vw; width: 7vw;
+    height: 10vh; width: 7vw;
     display: block;
 }
 #flag_fly_img
 {
-    height: 5vw; width: 7vw;
+    height: 10vh; width: 7vw;
     display: none;
     position: fixed;
     z-index: 2;
@@ -110,9 +112,20 @@ ol li a
     justify-content: center;
 
     height: 100%;
+}
+#table_of_content
+{
+    position: fixed;
+    z-index: 2;
+
+    transition: 1s;
+
+    top: 30%;
+
+    font-size: 2vw;
+    font-family: 'Cookie', cursive;
 
 }
-
 .content
 {
     height: 100%;
