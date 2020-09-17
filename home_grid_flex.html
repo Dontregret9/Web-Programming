@@ -17,14 +17,15 @@
             <div class="header">
                 <div class="header_container">
                     <div class="avatar">
-                        <img style="width:12vw; height:12vw;" src="./avatar.png" />
+                        <img id="avatar_img" style="width:12vw; height:12vw;" src="./avatar.png" />
                     </div>
                     <div class="name" style="font-size:7vw;font-family: 'Great Vibes', cursive;"> Le Duc Hoa</div>
                     <div class="hometown">
-                        <img style="height: 12vw;" src="./coconuttree.png"/>
+                        <img id="hometown_img" style="height: 12vw;" src="./coconuttree.png"/>
                     </div>
                     <div class="country">
-                        <img style="height: 5vw; width: 7vw;" src="./flag.png">
+                        <img id="country_img" src="./flag.png">
+                        <img id="flag_fly_img" src="./flag_fly.gif">
                     </div>
                 </div>
             </div>
@@ -185,7 +186,7 @@
 
         <div class="hidden-content">
             <div id="pic0_modal" class="modal">
-                <span class="img_close" onclick="ExitImageView('pic1_modal')">&times;</span>
+                <span class="img_close" onclick="ExitImageView('pic0_modal')">&times;</span>
                 <div class="modal_content">
                     <a class="img_prev" onclick="ImageViewNext(-1)">&#10094;</a>
                     <div class="view_content">

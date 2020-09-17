@@ -21,7 +21,7 @@ li
     position: absolute;
     z-index: 0;
     display: grid;
-    grid-template-columns: 2fr 5fr 2fr;
+    grid-template-columns: 2fr 8fr 2.5fr;
     grid-template-rows: 12vw 1fr;
     height: 100%;
 }
@@ -62,9 +62,44 @@ ol li a
     display: flex;
     align-items: center;
 }
+#country_img
+{
+    height: 5vw; width: 7vw;
+    display: block;
+}
+#flag_fly_img
+{
+    height: 5vw; width: 7vw;
+    display: none;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    right: 0;
+}
 .hometown
 {
     flex-grow: 1;
+}
+
+.header_container:hover .name
+{
+    color: rgb(247, 243, 8);
+}
+.header_container:hover #country_img
+{
+    display: none;
+}
+.header_container:hover #flag_fly_img
+{
+    display: block;
+}
+.header_container:hover .hometown
+{
+    margin-right: 7vw;
+}
+.header_container:hover
+{
+    background-color: limegreen;
 }
 .left
 {
@@ -217,6 +252,11 @@ ol li a
     display: grid;
     grid-template-rows: 3.3vw 47.7vw;
     grid-template-columns: 2.4vw 22vw;
+    height: 53vw;   
+}
+.right:hover
+{
+    background-color: rgb(85, 103, 241);
 }
 #up-down
 {
