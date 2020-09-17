@@ -62,7 +62,12 @@ ol li a
     flex-grow: 6;
     display: flex;
     align-items: center;
+
     transition: 1s;
+
+    font-size:7vw;
+
+    font-family: 'Great Vibes', cursive;
 }
 #country_img
 {
@@ -262,12 +267,9 @@ ol li a
 */
 .right
 {
-    display: grid;
-    grid-template-rows: 3.3vw 47.7vw;
-    grid-template-columns: 2.4vw 22vw;
-    height: 53vw;   
+       
 }
-.right:hover
+#highlight_picture:hover
 {
     background-color: rgb(85, 103, 241);
 }
@@ -312,6 +314,14 @@ ol li a
 }
 
 #highlight_picture
+{
+    display: grid;
+    grid-template-rows: 3.3vw 47.7vw;
+    grid-template-columns: 2.4vw 22vw;
+    height: 53vw; 
+}
+
+#hp_title
 {
     font-weight:bold;
     font-size: 1.8vw;
@@ -360,11 +370,12 @@ ol li a
 }
 .modal_content
 {   
-    display: flex;
+    display: flex;  
     flex-direction: row;    
     align-items: center;
+    justify-content: center;
 
-    max-width: 1350px;
+    max-width: 1650px;
     max-height: 960px;
 }
 
@@ -373,7 +384,7 @@ ol li a
     display: flex;
     flex-direction: row;    
 
-    max-width: 1250px;
+    max-width: 1450px;
     max-height: 1250px;
 
     background-color:steelblue;
@@ -387,7 +398,7 @@ ol li a
     min-width: 192px;
     min-height: 108px;
 
-    margin: 5px;
+    margin: 10px;
 }
 .img_close
 {
@@ -402,25 +413,44 @@ ol li a
     font-size: 50px;
     font-weight: bold;
 }
+.img_close:hover
+{
+    color: red;
+}
+.hc_note
+{
+    background-color: whitesmoke;
+    text-align: center;
+    margin: 10px 10px 10px 0;
+}
 .img_note
 {
     font-size: 30px;
-    font-weight: bold;
-    color: rgb(234, 246, 237);
-    max-width: 10vw;
+    color:black;
+    width: 20vw;
 }
 .img_prev, .img_next
 {
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 0;
 
-    font-size: 40px;
-    height: 60px;
-    width: 70px;
+    font-size: 30px;    
+    height: 120px;
+    width: 60px;
     color: whitesmoke;
+    border-radius: 40px 40px 40px 40px;
 
     cursor: pointer;
+}
+.img_next
+{
+    margin-left: 30px;
+}
+.img_prev
+{
+    margin-right: 30px;
 }
 .img_next:hover, .img_prev:hover
 {
