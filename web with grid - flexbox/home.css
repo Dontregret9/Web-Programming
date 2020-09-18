@@ -531,14 +531,13 @@ input
     width: 94%;
     height: 200px;
     font-size: 25px;
-
+    
     margin: auto;
     border: rgba(18, 191, 243, 0.5) double 3px;
     border-radius: 13px;
     padding: 5px;
     outline: none;
-    font-family: 'Cookie', cursive;
-}
+    font-family: 'Old Standard TT', serif;}
 #submit_form
 {
     margin: auto;
