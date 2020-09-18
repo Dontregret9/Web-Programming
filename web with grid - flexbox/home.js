@@ -83,3 +83,87 @@ function ImageViewNext(n)
         ImageView(next_id);
     }
 }
+/*
+--------------------------------------------------------------------------------------
+Check form
+*/
+function Check_name()
+{
+    let input = document.getElementById("your_name");
+    let name = input.value;
+
+    if(name.length < 2 || name.length > 30)
+    {
+        input.style.borderColor = "rgb(243, 104, 39)";
+        document.getElementById("alert_name").style.display = "block";
+        return false;
+    }
+    else
+    {
+        input.style.borderColor = " rgb(179, 199, 241)";
+        document.getElementById("alert_name").style.display = "none";
+        return true;
+    }
+}
+
+function Check_email()
+{
+    let input = document.getElementById("your_email");
+    let email = input.value;
+
+    let regrex_check = /^[a-z][a-z0-9_\.]{5,32}@[a-z0-9]{2,}(\.[a-z0-9]{2,}){1,3}$/;
+    if(!(regrex_check.test(email)))
+    {
+        input.style.borderColor = "rgb(243, 104, 39)";
+        document.getElementById("alert_email").style.display = "block";
+        return false;
+        return 
+    }
+    else
+    {
+        input.style.borderColor = " rgb(179, 199, 241)";
+        document.getElementById("alert_email").style.display = "none";
+        return true;
+    }
+}
+
+function Check_content()
+{
+    let input = document.getElementById("your_ideas");
+    let content = input.value;
+
+    if(content.length < 2)
+    {
+        input.style.borderColor = "rgb(243, 104, 39)";
+        document.getElementById("alert_content_img").style.display = "block";
+        document.getElementById("alert_content_text").style.display = "block"
+        return false;
+    }
+    else
+    {
+        input.style.borderColor = " rgb(179, 199, 241)";
+        document.getElementById("alert_content_img").style.display = "none";
+        document.getElementById("alert_content_text").style.display = "none"
+        return true;
+    }
+}
+
+function Validate_form()
+{
+    if(!Check_name())
+    {
+        alert("Your name is invalid");
+        return false;
+    }
+    if(!Check_email)
+    {
+        alert("Your email is invalid");
+        return false;
+    }
+    if(!Check_content())
+    {
+        alert("Your content is too short")
+        return false;
+    }
+    return true;
+}

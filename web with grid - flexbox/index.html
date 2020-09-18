@@ -187,6 +187,37 @@
                     </div>
     
                 </div>
+
+                <div style="margin-top: 20px; padding-top: 10px;">
+                    <div id="comment">
+                        <p id="c_title">Contribute your ideas</p>
+                        <form action="" name="contribute_form">
+                            <label class="label_form" for="your_name" >Your name</label>
+                            <div class="info_input">    
+                                <input id="your_name" type="text" onblur="Check_name()">
+                                <img class="alert" id="alert_name" src="../images/alert.png"><br><br>
+                            </div>
+                            
+                            <label class="label_form" for="your_email">Your email </label>
+                            <div class="info_input">
+                                <input id="your_email" type="text" onblur="Check_email()">
+                                <img class="alert" id="alert_email" src="../images/alert.png"><br><br>
+                            </div>
+                            
+                            <label class="label_form" for="ideas">Content </label>
+                            <textarea id="your_ideas" type="text" onblur="Check_content()">Hello!</textarea>
+                            <div class="content_input">
+                                <img class="alert" id="alert_content_img" src="../images/alert.png">
+                                <p id="alert_content_text">Content is too short</p>
+                            </div>
+                            <div style="display: flex; align-items: center;">
+                                <input id="submit_form" type="submit" value="Submit" onclick="Validate_form()">
+                            </div>
+                            
+                        </form>
+                    </div>
+                </div>
+  
             </div>
         </div>
 

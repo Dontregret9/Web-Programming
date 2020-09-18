@@ -21,7 +21,7 @@ li
     position: absolute;
     z-index: 0;
     display: grid;
-    grid-template-columns: 2fr 8fr 2.5fr;
+    grid-template-columns: 1.7fr 8fr 2.5fr;
     grid-template-rows: 12vw 1fr;
     height: 100%;
 }
@@ -91,6 +91,7 @@ ol li a
 .header_container:hover .name
 {
     color: rgb(247, 243, 8);
+    margin-left: 150px;
 }
 .header_container:hover #country_img
 {
@@ -267,12 +268,11 @@ ol li a
 */
 .right
 {
-       
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(to top, #d9afd9 0%, rgb(85, 103, 241) 100%);
 }
-#highlight_picture:hover
-{
-    background-color: rgb(85, 103, 241);
-}
+
 #up-down
 {
     display: flex;
@@ -332,20 +332,20 @@ ol li a
 }
 #pictures
 {
+    grid-column: 2/3;
+
     display: flex;
     flex-direction: column;
     
     width: 6.6vw;
     margin-top: 0.6vw;
     margin-left: 0.6vw;
-
-    grid-column: 2/3;
 }
 .picture
 {
-    border: solid 0.18vw blue;
+    border: solid 0.1vw rgb(39, 13, 13);
     width: fit-content;
-    background-color: blue;
+    background-color: white;
     cursor: pointer;
     display: none;
 }
@@ -434,7 +434,6 @@ ol li a
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 0;
 
     font-size: 30px;    
     height: 120px;
@@ -455,4 +454,138 @@ ol li a
 .img_next:hover, .img_prev:hover
 {
     background-color: rgb(117, 106, 98);
+}
+/*
+--------------------------------------------------------------------------------------------------------------------
+form
+*/
+form
+{
+    display: flex;
+    flex-direction: column;
+}
+input
+{
+    border: none;
+    border-bottom: 2px rgb(179, 199, 241) solid;
+    outline: none;
+    padding: 5px;
+
+    font-size: 20px;
+}
+
+#comment
+{
+    display: flex;
+    flex-direction: column;
+
+    width: 90%;
+
+    margin: auto;
+    padding-bottom: 10px;
+
+    border: royalblue solid 2px;
+    border-radius: 5%;
+    /*          right bottom blur color*/
+    box-shadow: 0.3px 2px 12px rgb(0,0,0,0.2);
+    background-color: rgb(255, 255, 255);
+}
+#c_title
+{   
+    font-size: 40px;
+    font-family: 'Cookie', cursive;
+
+    text-align: center;
+
+    text-shadow: 0.2px 0.2px 5px rgba(228, 125, 223, 0.3);
+
+    user-select: none;
+}
+
+.info_input
+{
+    display: flex;
+    flex-direction: row;
+
+    margin-bottom: 20px;
+}
+.label_form 
+{   
+    font-size: 30px;
+    margin-left: 5%;
+    text-shadow: 0.2px 0.2px 15px rgba(74, 184, 248, 0.2);
+    font-family: 'Cookie', cursive;
+
+    user-select: none;
+}
+#your_name, #your_email
+{
+    width: 65%;
+    height: 25px;
+    font-size: 20px;
+
+    margin-left: 10%;
+}   
+#your_ideas
+{
+    width: 94%;
+    height: 200px;
+    font-size: 25px;
+
+    margin: auto;
+    border: rgba(18, 191, 243, 0.5) double 3px;
+    border-radius: 13px;
+    padding: 5px;
+    outline: none;
+    font-family: 'Cookie', cursive;
+}
+#submit_form
+{
+    margin: auto;
+
+    width: 60%;
+
+    font-size: 20px;
+
+    cursor: pointer;
+
+    transition: 0.5s;
+    
+    border-radius: 18px;
+
+    background-image: linear-gradient(120deg, #a6c0fe 0%, #f68084 100%);
+
+    box-shadow: 0.3px 0.3px 12px rgb(0,0,0,0.2);
+
+}
+#submit_form:hover
+{
+    background-color: royalblue;
+    color: whitesmoke;
+}
+.alert
+{
+    height: 30px;
+    width: 35px;
+
+    display: none;
+}
+
+.content_input
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    margin-top: 0;
+    margin-bottom: 10px;
+    height: 20px;
+}
+#alert_content_img,#alert_content_text
+{
+    margin-top: 0;
+    color: rgb(243, 104, 39);
+
+    display: none;
+    user-select: none;
 }
