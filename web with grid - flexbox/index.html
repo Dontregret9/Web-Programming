@@ -12,217 +12,232 @@
         <script src="./home.js"></script>
     </head>
 
-    <body style="margin: 0px;height: 100%;background-color: white;"
-        onload="ShowSlides(0)">
-        <div class="container">
+    <body onload="ShowSlides(0)">
+        
+        <div class="main_view">
             <div class="header">
-                <div class="header_container">
-                    <div class="avatar">
-                        <img id="avatar_img" style="width:12vw; height:12vw;" src="../images/avatar.png" />
-                    </div>
-                    <div class="name"> Le Duc Hoa</div>
-                    <div class="hometown">
-                        <img id="hometown_img" style="height: 13vw;" src="../images/coconuttree.png"/>
-                    </div>
-                    <div class="country">
-                        <img id="country_img" src="../images/flag.png">
-                        <img id="flag_fly_img" src="../images/flag_fly.gif">    
-                    </div>
+                <div id="h_avatar">
+                    <img src="../images/avatar.png" alt="My avatar">
                 </div>
-            </div>
-
-            <div class="left">
-                <div id="table_of_content">
-                    Table of contents
-                    <ol type="a">
-                        <li><a href="#edu">Education</a> </li>
-                        <li><a href="#skill">Skill</a></li>
-                        <li><a href="#personal">Personal</a></li>
-                        <li><a href="#experience">Experience</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ol>
-                </div>
+                <div id="h_name">
+                    <p>Le Duc Hoa</p>
+               </div>
                 
+                <div id="h_hometown">
+                    <div id="h_hometown_flipping">
+                        <div id="h_hometown_front">
+                            <img src="../images/coconuttree.png" alt="Coconut tree">
+                        </div>
+                        <div id="h_hometown_back">
+                            <p>My hometown is in Ben Tre - the province with the largest amount of coconut in Vietnam</p>
+                        </div>  
+                    </div>
+                </div>
+                <div id="h_vnflag">
+                    <div id="h_vnflag_front">
+                        <img src="../images/flag.png" alt="VietNam flag">
+                    </div>
+                    <div id="h_vnflag_back">
+                        <p>Vietnam is my country</p>
+                    </div>
+                    
+                </div>
+           </div>
+    
+           <div class="left">
+            <div id="table_of_content">
+                <p>Table of contents</p> 
+                <ol type="a">
+                    <li><a href="#edu">Education</a> </li>
+                    <li><a href="#skill">Skill</a></li>
+                    <li><a href="#personal">Personal</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ol>
             </div>
-
-            <div class="content">
-                <div id="edu">
-                    <div class="title">
+           </div>
+    
+           <div class="main">
+                <div id="m_edu" class="m_component">
+                    <div class="m_title">
                         Education
                         <hr>
                     </div>
-                    <div id="edu_tab"></div>
-                    <div id="uni_img">
-                        <a href="https://www.hcmus.edu.vn/" target="_blank" >
-                            <img src="../images//hcmus.png" style="height:3.6vw; width:3.6vw"/>
-                        </a> 
+    
+                    <div class="me_edu">
+                        <div class="me_img">
+                            <a href="https://www.hcmus.edu.vn/" target="_blank" >
+                                <img src="../images//hcmus.png"/>
+                            </a> 
+                        </div>
+                        <div class="me_info">
+                                <p>Ho Chi Minh University of Science</p>
+                                <pre>Computer Science     2017- current</pre>
+                        </div>
                     </div>
-
-                    <div class="info">
-                            <div class="_info">Ho Chi Minh University of Science</div>
-                            <pre class="_note">Computer Science     2017- current</pre>
+    
+                    <div class="me_edu">
+                        <div class="me_img">
+                            <a href="https://www.coderschool.vn" target="_blank" >
+                                <img src="../images/coderschool.png" style="height:3.6vw; width:3.6vw"/>
+                            </a>
+                        </div>
+                        <div class="me_info">
+                            <p>CoderSchool</p>
+                            <pre>Data Science     2019</pre>
+                        </div>
                     </div>
-
-                    <div id="course_img">
-                        <a href="https://www.coderschool.vn" target="_blank" >
-                            <img src="../images/coderschool.png" style="height:3.6vw; width:3.6vw"/>
-                        </a>
-                    </div>
-
-                    <div class="infor">
-                        <div class="_info">CoderSchool</div>
-                        <pre class="_note">Data Science     2019</pre>
-                    </div>
-
+    
                 </div>
-
-                <div id="skill">
-                    <div id="skill_title">
+    
+                <div id="m_skill" class="m_component">
+                    <div class="m_title">
                         Skill
                         <hr>
                     </div>
-                    <div id="skill_tab"></div>
-                    <div>
-                        <ul>
-                            <li><b>Be able to read and understanding English documents</b></li>
-                            <li><b>I eager to learn easily to adaptable to new enviroment</b></li>
-                            <li>Understanding the principles of OOP</li>
-                            <li>Knowledge in data structure and algorithms</li>
-                            <li>Programming language: C/C++, Python</li>
-                        </ul>
+    
+                    <div id="m_skill_basic">
+                        <p>Basic</p>
+                        <div>
+                            <ul>
+                                <li>Understanding the principles of OOP</li>
+                                <li>Knowledge in data structure and algorithms</li>
+                                <li>Programming language: C/C++, Python</li>
+                            </ul>
+                            <div id="m_skill_basic_img">
+                                <img src="../images/python.png" alt="python language">
+                                <img src="../images/datastructure.png" alt="Data structure">
+                            </div>
+                        </div>
+                        
                     </div>
-                    <div id="ml">
-                        <b style="font-size: 1.5vw;">Machine Learning</b>
+    
+                    <div id="m_skill_ml">
+                        <p>Machine Learning</p>
                         <ul>
                             <li>Understanding the principles of Machine Learning</li>
                             <li>Knowledge in Data Processing</li>
                             <li>Experience with Python library as Numpy, Pandas, Seaborn, Scikit-Learn</li>
                         </ul>
                     </div>
-                   <div id="web">
-                       <b style="font-size: 1.5vw;">Web Programming</b>
+                    <div id="m_skill_web">
+                        <p>Web Programming</p>
+                            <ul>
+                                <li>HTML/CSS</li>
+                                <li>Javascript</li>
+                            </ul>
+                    </div>
+                    <div id="m_skill_soft">
+                        <p>Soft skill</p>
                         <ul>
-                            <li>HTML/CSS</li>
-                            <li>Javascript</li>
+                            <li>Be able to read and understanding English documents</li>
+                            <li>I eager to learn easily to adaptable to new enviroment</li>
                         </ul>
-                   </div>
+                    </div>
                 </div>
-
-                <div id="personal">
-                    <div id="personal_title">
+    
+                <div id="m_personal" class="m_component">
+                    <div class="m_title">
                         Personal Project
                         <hr>
                     </div>
-                    <div id="personal_tab"></div>
-                    <div id="project">
-                        <ul style="list-style-type:none;">
-                            <li>
-                                <a href="https://github.com/Dontregret9/Caro" target="_blink">Caro game in console (C/C++)</a>
-                            </li>
-                            <li>
-                                <iframe src="https://www.youtube.com/embed/ctcrD_TC_Io" 
-                                width="700" height="420" allowfullscreen="allowfullscreen"></iframe>
-                            </li>
+                    <div id="m_project">
+                        <ul>
+                            <p>
+                                This is my Caro game in console (C/C++) in my university <br><br><br>
+                                <a href="https://github.com/Dontregret9/Caro" target="_blink">Source code in Github</a>
+                            </p>
+                            
+                            <iframe src="https://www.youtube.com/embed/ctcrD_TC_Io"
+                            width="700" height="420" allowfullscreen="allowfullscreen"></iframe>
                         </ul>
                     </div>
                 </div>
-
-                <div id="experience">
-                    <div id="exp_title">
+    
+                <div id="m_experience" class="m_component">
+                    <div class="m_title">
                         Experience
                         <hr>
                     </div>
-                    <div id="exp">
+                    <div id="m_exp_1">
                         <ul>
                             <li><a target="_blank" href="https://devc-challenge.coderschool.vn/">Developer circles Vietnam innovation challenge - Data Scientist</a></li>
                         </ul>
                     </div>
-                    <div id="exp_tab"></div>
                 </div>
-                <div id="contact">
-                    <div id="contact_title">
+
+                <div id="m_contact" class="m_component">
+                    <div class="m_title">
                         Contact
                         <hr>
                     </div>
-                    <div id="con_tab"></div>
-                    <div id="_contact">
+                    <div id="m_all_contact">
                         <ul>
-                            <li><b>Email: </b><a href="mailto:leduchoabatr12@gmail.com" target="_blank">leduchoabatr12@gmail.com</a></li>
-                            <li><b>LinkedIn: </b><a href="https://www.linkedin.com/in/leduchoa12" target="_blank">leduchoa12</a></li>
-                            <li><b>Github: </b><a href="https://github.com/Dontregret9" target="_blank">dontregret9</a></li>
+                            <li><img src="../images/gmail.webp" alt="gmail"><a href="mailto:leduchoabatr12@gmail.com" target="_blank">leduchoabatr12@gmail.com</a></li>
+                            <li><img src="../images/linkedin.png" alt="linkedin"><a href="https://www.linkedin.com/in/leduchoa12" target="_blank">leduchoa12</a></li>
+                            <li><img src="../images/github.png" alt="github"><a href="https://github.com/Dontregret9" target="_blank">dontregret9</a></li>
                         </ul>
                     </div>
                 </div>
             </div>
-            
-            <div class="right"> 
-                <div id="highlight_picture">
-                    <div id="hp_title">
+    
+            <div class="right">
+                <div id="r_highlight_picture">
+                    <div id="rhp_title">    
                         Highlight pictures
                     </div>  
     
-                    <div id="up-down">
-                        <img id="up-btn" src="../images/up.png" onclick="SlideTo(1)">
-                        <img id="down-btn" src="../images/down.png" onclick="SlideTo(-1)">
-                    </div>
-    
                     <div id="pictures">
-                        <div class="picture">
-                            <a onclick="ImageView('pic0_modal')"><img id="pic0" src="../images/shoppe.png" style="width: 21vw; height: 15vw;"/></a>
+                        <div id="rhp_up_btn"  onclick="SlideTo(-1)">
+                            <a><img src="../images/up.png"></a>
                         </div>
-                        <div class="picture">
-                            <a onclick="ImageView('pic1_modal')"><img id="pic1" src="../images/coderschool.jpg" style="width: 21vw; height: 15vw;"/></a> 
-                        </div>
-                        <div class="picture">
-                            <a onclick="ImageView('pic2_modal')"><img id="pic2" src="../images/caro.png" style="width: 21vw; height: 15vw;"/></a> 
-                        </div>
-                        <div class="picture">
-                            <a onclick="ImageView('pic3_modal')"><img id="pic3" src="../images/qs.JPG" style="width: 21vw; height: 15vw;"/></a>
-                        </div>
-                        <div class="picture">
-                            <a onclick="ImageView('pic4_modal')"><img id="pic4" src="../images/horse.jpg" style="width: 21vw; height: 15vw;"/></a>
-                        </div>
-                        <div class="picture">
-                            <a onclick="ImageView('pic5_modal')"><img id="pic5" src="../images/car.jpg" style="width: 21vw; height: 15vw;"/></a>
+                        <a onclick="ImageView('pic0_modal')"><img id="pic0" src="../images/shoppe.png"/></a>
+                        <a onclick="ImageView('pic1_modal')"><img id="pic1" src="../images/coderschool.jpg"/></a> 
+                        <a onclick="ImageView('pic2_modal')"><img id="pic2" src="../images/caro.png"/></a> 
+                        <a onclick="ImageView('pic3_modal')"><img id="pic3" src="../images/qs.JPG"/></a>
+                        <a onclick="ImageView('pic4_modal')"><img id="pic4" src="../images/horse.jpg"/></a>
+                        <a onclick="ImageView('pic5_modal')"><img id="pic5" src="../images/car.jpg"/></a>
+                        <div id="rhp_down_btn" onclick="SlideTo(1)">
+                            <a><img src="../images/down.png"></a>
                         </div>
                     </div>
     
                 </div>
-
-                <div style="margin-top: 20px; padding-top: 10px;">
-                    <div id="comment">
-                        <p id="c_title">Contribute your ideas</p>
+    
+                <div id="r_comment_form">
+                    <div id="r_comment">
+                        <p id="rc_title">Contribute your ideas</p>
                         <form action="" name="contribute_form">
-                            <label class="label_form" for="your_name" >Your name</label>
-                            <div class="info_input">    
-                                <input id="your_name" type="text" onblur="Check_name()">
-                                <img class="alert" id="alert_name" src="../images/alert.png"><br><br>
+                            <label class="rc_label_form" for="rc_guess_name" >Your name</label>
+                            <div class="rc_info_input">    
+                                <input id="rc_guess_name" type="text" onblur="Check_name()">
+                                <img class="rc_alert" id="rc_alert_name" src="../images/alert.png"><br><br>
                             </div>
                             
-                            <label class="label_form" for="your_email">Your email </label>
-                            <div class="info_input">
-                                <input id="your_email" type="text" onblur="Check_email()">
-                                <img class="alert" id="alert_email" src="../images/alert.png"><br><br>
+                            <label class="rc_label_form" for="rc_guess_email">Your email </label>
+                            <div class="rc_info_input">
+                                <input id="rc_guess_email" type="text" onblur="Check_email()">
+                                <img class="rc_alert" id="rc_alert_email" src="../images/alert.png"><br><br>
                             </div>
                             
-                            <label class="label_form" for="ideas">Content </label>
-                            <textarea id="your_ideas" type="text" onblur="Check_content()">Xin chào! Nhờ bạn góp ý ...</textarea>
-                            <div class="content_input">
-                                <img class="alert" id="alert_content_img" src="../images/alert.png">
-                                <p id="alert_content_text">Content is too short</p>
+                            <label class="rc_label_form" for="rc_guess_ideas">Content </label>
+                            <textarea id="rc_guess_ideas" type="text" onblur="Check_content()">Xin chào! Nhờ bạn góp ý ...</textarea>
+                            <div class="rc_content_input">
+                                <img class="rc_alert" id="rc_alert_content_img" src="../images/alert.png">
+                                <p id="rc_alert_content_text">Content is too short</p>
                             </div>
                             <div style="display: flex; align-items: center;">
-                                <input id="submit_form" type="submit" value="Submit" onclick="Validate_form()">
+                                <input id="rc_submit_form" type="submit" value="Submit" onclick="Validate_form()">
                             </div>
                             
                         </form>
                     </div>
                 </div>
-  
+    
             </div>
         </div>
 
-        <div class="hidden-content">
+        <div class="picture_view">
             <div id="pic0_modal" class="modal">
                 <span class="img_close" onclick="ExitImageView('pic0_modal')">&times;</span>
                 <div class="modal_content">
@@ -235,7 +250,6 @@
                     </div>
                     <a class="img_next" onclick="ImageViewNext(1)">&#10095;</a>
                 </div>
-        
             </div>
 
             <div id="pic1_modal" class="modal">
@@ -308,6 +322,6 @@
                 </div>
             </div>
         </div>
-        
+
     </body>
 </html>

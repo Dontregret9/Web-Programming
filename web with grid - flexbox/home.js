@@ -5,7 +5,7 @@ var cur_img = [0,1,2];
 function ShowSlides(start_img) 
 {
     // get all picture elements and hide them 
-    let slides = document.getElementsByClassName("picture");
+    let slides = document.querySelectorAll("#pictures>a");
     for (let i = 0; i < slides.length; i++)
     {
         slides[i].style.display = "none";
@@ -89,61 +89,61 @@ Check form
 */
 function Check_name()
 {
-    let input = document.getElementById("your_name");
+    let input = document.getElementById("rc_guess_name");
     let name = input.value;
 
     if(name.length < 2 || name.length > 30)
     {
         input.style.borderColor = "rgb(243, 104, 39)";
-        document.getElementById("alert_name").style.display = "block";
+        document.getElementById("rc_alert_name").style.display = "block";
         return false;
     }
     else
     {
         input.style.borderColor = " rgb(179, 199, 241)";
-        document.getElementById("alert_name").style.display = "none";
+        document.getElementById("rc_alert_name").style.display = "none";
         return true;
     }
 }
 
 function Check_email()
 {
-    let input = document.getElementById("your_email");
+    let input = document.getElementById("rc_guess_email");
     let email = input.value;
 
     let regrex_check = /^[a-z][a-z0-9_\.]{5,32}@[a-z0-9]{2,}(\.[a-z0-9]{2,}){1,3}$/;
     if(!(regrex_check.test(email)))
     {
         input.style.borderColor = "rgb(243, 104, 39)";
-        document.getElementById("alert_email").style.display = "block";
+        document.getElementById("rc_alert_email").style.display = "block";
         return false;
         return 
     }
     else
     {
         input.style.borderColor = " rgb(179, 199, 241)";
-        document.getElementById("alert_email").style.display = "none";
+        document.getElementById("rc_alert_email").style.display = "none";
         return true;
     }
 }
 
 function Check_content()
 {
-    let input = document.getElementById("your_ideas");
+    let input = document.getElementById("rc_guess_ideas");
     let content = input.value;
 
     if(content.length < 2)
     {
         input.style.borderColor = "rgb(243, 104, 39)";
-        document.getElementById("alert_content_img").style.display = "block";
-        document.getElementById("alert_content_text").style.display = "block"
+        document.getElementById("rc_alert_content_img").style.display = "block";
+        document.getElementById("rc_alert_content_text").style.display = "block"
         return false;
     }
     else
     {
         input.style.borderColor = " rgb(179, 199, 241)";
-        document.getElementById("alert_content_img").style.display = "none";
-        document.getElementById("alert_content_text").style.display = "none"
+        document.getElementById("rc_alert_content_img").style.display = "none";
+        document.getElementById("rc_alert_content_text").style.display = "none"
         return true;
     }
 }
