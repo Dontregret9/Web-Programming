@@ -179,17 +179,34 @@ body
     transform: rotateY(180deg);
 }
 /*-------------------------------------------------------------------------------*/
+#content
+{
+    position: relative;
+}
 #left-content
 {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+#table-of-content
+{
+    position: fixed;
+    padding-left: 1vw;
     font-size: 2vw; 
     font-family: 'Cookie', cursive;
+
+    transition: .5s;
 }
 
 
 /*--------------------------------------- main component ------------------------------------------------------*/
 
 /*-----------Education-----------*/
-
+#main-content
+{
+    position: relative;
+}
 .m_component
 {
     margin-top: 1vw;
@@ -319,15 +336,10 @@ body
     height: 3vw;
 }
 /*--------------------------------------------------------------------------------*/
-.right
+#right-content
 {
-    display: flex;
-    flex-direction: column;
-
-    margin-left: 1vw;
-    margin-right: 1vw;
+    position: relative;
 }
-
 /*----------- slideshow pictures -----------------*/
 
 #r_highlight_picture
@@ -579,7 +591,6 @@ input
 .modal
 {
     position: fixed;
-    z-index: 1; 
     top: 0;
     left: 0;
 
