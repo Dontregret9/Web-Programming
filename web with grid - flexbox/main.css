@@ -311,7 +311,10 @@ body
     width: 45vw;
     height: 23vw;
 }
-
+#m_exp_1 ul
+{
+    list-style: square;
+}
 #responsive-video {
     position: relative;
     padding-bottom: 20%;
@@ -580,10 +583,7 @@ input
 }
 
 /*-----------------------------------------PICTURE VIEW -------------------------------------------*/   
-#picture_view
-{
-    
-}
+
 #pic0_modal,#pic1_modal,#pic2_modal,#pic3_modal,#pic4_modal,#pic5_modal
 {   
     display: none;
