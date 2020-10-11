@@ -315,6 +315,11 @@ body
 {
     list-style: square;
 }
+#m_all_contact ul li
+{
+    display: flex;
+    align-items: center;
+}
 #responsive-video {
     position: relative;
     padding-bottom: 20%;
