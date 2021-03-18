@@ -5,13 +5,15 @@ hr
 {
     margin: 0;
     size: 1vw;
-    color: chartreuse;  
+    color: chartreuse;
     box-shadow: .2vw .2vw 1vw rgb(0, 0, 0, 0.2);
 }
+
 ul
 {
     list-style: none;
 }
+
 ul li
 {
     margin-left: 1.5vw;  
@@ -19,6 +21,7 @@ ul li
     font-size: 1.5vw;
     font-family: 'Old Standard TT', serif;
 }
+
 a
 {
     text-decoration: none;
@@ -71,7 +74,6 @@ body
     margin-left: .5vw;
     width: 8.5vw;
     height: 8.5vw;
-
 }
 
 /*----------------------------------------------------------*/
@@ -79,6 +81,7 @@ body
 {
     margin: auto;
 }
+
 #name p
 {
     font-size: 5vw;
@@ -326,7 +329,6 @@ body
     padding-top: 30px;
     height: 0;
     overflow: hidden;
-
 }
 
 #responsive-video iframe
@@ -589,7 +591,7 @@ input
 
 /*-----------------------------------------PICTURE VIEW -------------------------------------------*/   
 
-#pic0_modal,#pic1_modal,#pic2_modal,#pic3_modal,#pic4_modal,#pic5_modal
+#pic0_modal,#pic1_modal,#pic2_modal,#pic3_modal,#pic4_modal,#pic5_modal,#pic6_modal
 {   
     display: none;
 }

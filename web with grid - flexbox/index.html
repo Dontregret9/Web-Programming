@@ -15,6 +15,9 @@
         <title>Welcome to my site</title>
 
         <script src="./home.js"></script>
+        
+        <script data-ad-client="ca-pub-8078166005968642" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
     </head>
 
     <body onload="ShowSlides(0)">
@@ -69,19 +72,19 @@
                             Education
                             <hr>
                         </div>
-        
+
                         <div class="me_edu">
                             <div class="me_img">
                                 <a href="https://www.hcmus.edu.vn/" target="_blank" >
                                     <img src="../images/hcmus.png"/>
-                                </a> 
+                                </a>
                             </div>
                             <div class="me_info">
                                     <p>Ho Chi Minh University of Science</p>
                                     <pre>Computer Science     2017- current</pre>
                             </div>
                         </div>
-        
+
                         <div class="me_edu">
                             <div class="me_img">
                                 <a href="https://www.coderschool.vn" target="_blank" >
@@ -93,15 +96,15 @@
                                 <pre>Data Science     2019</pre>
                             </div>
                         </div>
-        
+
                     </div>
-        
+
                     <div id="m_skill" class="m_component">
                         <div class="m_title">
                             Skill
                             <hr>
                         </div>
-        
+
                         <div id="m_skill_basic">
                             <p>Basic</p>
                             <div>
@@ -115,9 +118,9 @@
                                     <img src="../images/datastructure.png" alt="Data structure">
                                 </div>
                             </div>
-                            
+
                         </div>
-        
+
                         <div id="m_skill_ml">
                             <p>Machine Learning</p>
                             <ul>
@@ -141,7 +144,7 @@
                             </ul>
                         </div>
                     </div>
-        
+
                     <div id="m_personal" class="m_component">
                         <div class="m_title">
                             Personal Project
@@ -153,14 +156,14 @@
                                     This is my Caro game in console (C/C++) in my university <br><br><br>
                                     <a href="https://github.com/Dontregret9/Caro" target="_blink">Source code in Github</a>
                                 </p>
-                                
+
                                 <div id="responsive-video">
                                     <iframe src="https://www.youtube.com/embed/ctcrD_TC_Io"allowfullscreen height="640" width="570"></iframe>
                                 </div>
                             </ul>
                         </div>
                     </div>
-        
+
                     <div id="m_experience" class="m_component">
                         <div class="m_title">
                             Experience
@@ -173,8 +176,8 @@
                             </ul>
                         </div>
                     </div>
-    
-                    <div id="m_contact" class="m_component">    
+
+                    <div id="m_contact" class="m_component">
                         <div class="m_title">
                             Contact
                             <hr>
@@ -191,43 +194,44 @@
                 <div class="col l-3 m-4 s-5" id="right-content">
                     <div class="grid wide" id="right-content">
                         <div id="r_highlight_picture">
-                            <div id="rhp_title">    
+                            <div id="rhp_title">
                                 Highlight pictures
-                            </div>  
-            
+                            </div>
+
                             <div id="pictures">
                                 <div id="rhp_up_btn"  onclick="SlideTo(-1)">
                                     <a><img src="../images/up.png"></a>
                                 </div>
                                 <a onclick="ImageView('pic0_modal')"><img id="pic0" src="../images/shoppe.png"/></a>
-                                <a onclick="ImageView('pic1_modal')"><img id="pic1" src="../images/coderschool.jpg"/></a> 
-                                <a onclick="ImageView('pic2_modal')"><img id="pic2" src="../images/caro.png"/></a> 
+                                <a onclick="ImageView('pic1_modal')"><img id="pic1" src="../images/coderschool.jpg"/></a>
+                                <a onclick="ImageView('pic2_modal')"><img id="pic2" src="../images/caro.png"/></a>
                                 <a onclick="ImageView('pic3_modal')"><img id="pic3" src="../images/qs.JPG"/></a>
                                 <a onclick="ImageView('pic4_modal')"><img id="pic4" src="../images/horse.jpg"/></a>
                                 <a onclick="ImageView('pic5_modal')"><img id="pic5" src="../images/car.jpg"/></a>
+                                <a onclick="ImageView('pic6_modal')"><img id="pic6" src="../images/python_certificate.png"/></a>
                                 <div id="rhp_down_btn" onclick="SlideTo(1)">
                                     <a><img src="../images/down.png"></a>
                                 </div>
                             </div>
-            
+
                         </div>
-            
+
                         <div id="r_comment_form">
                             <div id="r_comment">
                                 <p id="rc_title">Contribute your ideas</p>
                                 <form action="" name="contribute_form">
                                     <label class="rc_label_form" for="rc_guess_name" >Your name</label>
-                                    <div class="rc_info_input">    
+                                    <div class="rc_info_input">
                                         <input id="rc_guess_name" type="text" onblur="Check_name()">
                                         <img class="rc_alert" id="rc_alert_name" src="../images/alert.png"><br><br>
                                     </div>
-                                    
+
                                     <label class="rc_label_form" for="rc_guess_email">Your email </label>
                                     <div class="rc_info_input">
                                         <input id="rc_guess_email" type="text" onblur="Check_email()">
                                         <img class="rc_alert" id="rc_alert_email" src="../images/alert.png"><br><br>
                                     </div>
-                                    
+
                                     <label class="rc_label_form" for="rc_guess_ideas">Content </label>
                                     <textarea id="rc_guess_ideas" type="text" onblur="Check_content()">Xin chào! Nhờ bạn góp ý ...</textarea>
                                     <div class="rc_content_input">
@@ -237,11 +241,11 @@
                                     <div style="display: flex; align-items: center;">
                                         <input id="rc_submit_form" type="submit" value="Submit" onclick="Validate_form()">
                                     </div>
-                                    
+
                                 </form>
                             </div>
                         </div>
-            
+
                     </div>
                 </div>
             </div>
@@ -262,7 +266,7 @@
                         <a class="img_next" onclick="ImageViewNext(1)">&#10095;</a>
                     </div>
                 </div>
-    
+
                 <div id="pic1_modal" class="modal">
                     <span class="img_close" onclick="ExitImageView('pic1_modal')">&times;</span>
                     <div class="modal_content">
@@ -270,13 +274,13 @@
                         <div class="view_content">
                             <img class="img_view" src="../images/coderschool.jpg" alt="Facebook Developer Circle + CoderSchool">
                             <div class="hc_note">
-                                <p class="img_note"> Facebook Developer Circle + CoderSchool</p>    
+                                <p class="img_note"> Facebook Developer Circle + CoderSchool</p>
                             </div>
                         </div>
                         <a class="img_next" onclick="ImageViewNext(1)">&#10095;</a>
                     </div>
                 </div>
-    
+
                 <div id="pic2_modal" class="modal">
                     <span class="img_close" onclick="ExitImageView('pic2_modal')">&times;</span>
                     <div class="modal_content">
@@ -290,7 +294,7 @@
                         <a class="img_next" onclick="ImageViewNext(1)">&#10095;</a>
                     </div>
                 </div>
-    
+
                 <div id="pic3_modal" class="modal">
                     <span class="img_close" onclick="ExitImageView('pic3_modal')">&times;</span>
                     <div class="modal_content">
@@ -304,7 +308,7 @@
                         <a class="img_next" onclick="ImageViewNext(1)">&#10095;</a>
                     </div>
                 </div>
-    
+
                 <div id="pic4_modal" class="modal">
                     <span class="img_close" onclick="ExitImageView('pic4_modal')">&times;</span>
                     <div class="modal_content">
@@ -318,7 +322,7 @@
                         <a class="img_next" onclick="ImageViewNext(1)">&#10095;</a>
                     </div>
                 </div>
-    
+
                 <div id="pic5_modal" class="modal">
                     <span class="img_close" onclick="ExitImageView('pic5_modal')">&times;</span>
                     <div class="modal_content">
@@ -332,9 +336,23 @@
                         <a class="img_next" onclick="ImageViewNext(1)">&#10095;</a>
                     </div>
                 </div>
+
+                <div id="pic6_modal" class="modal">
+                    <span class="img_close" onclick="ExitImageView('pic6_modal')">&times;</span>
+                    <div class="modal_content">
+                        <a class="img_prev" onclick="ImageViewNext(-1)">&#10094;</a>
+                        <div class="view_content">
+                            <img class="img_view" src="../images/python_certificate.png" alt="My certificate">
+                            <div class="hc_note">
+                                <p class="img_note"> </p>
+                            </div>
+                        </div>
+                        <a class="img_next" onclick="ImageViewNext(1)">&#10095;</a>
+                    </div>
+                </div>
             </div>
         </div>
-    
+
     </body>
 
 </html>
